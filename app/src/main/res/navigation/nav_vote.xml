@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_vote"
+    app:startDestination="@id/recycleFragment">
+
+    <fragment
+        android:id="@+id/recycleFragment"
+        android:name="com.example.groupfiveproject.RecycleFragment"
+        android:label="RecycleFragment" >
+        <action
+            android:id="@+id/action_recycleFragment_to_voteDetailFragment"
+            app:destination="@id/voteDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/voteDetailFragment"
+        android:name="com.example.groupfiveproject.VoteDetailFragment"
+        android:label="VoteDetailFragment" />
+</navigation>
